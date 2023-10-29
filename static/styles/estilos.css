@@ -1,0 +1,179 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+ }
+
+body {
+   
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: #1DABB8;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #1DABB8;
+    z-index: 1;
+}
+
+.senha-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+#senha {
+    width: calc(100% - 50px);
+    height: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color:white;
+    margin-left: 6px;
+}
+#ad1 {
+    position: absolute;
+    right:580px;
+    top:  50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#1DABB8;
+    border-top-right-radius: black;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.add {
+    float: right;
+    border-radius: 50% black;
+    
+    border-bottom: 2px solid ;
+    background-color:white;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: black;
+    border-width: black;
+    color:black;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+   
+}
+
+
+h1 {
+    color: white;
+    margin-bottom: 20px; /* Espaço extra entre o título e o formulário */
+
+}
+
+.response {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(328px);
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+ 
+}
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#usuario {
+    width: calc(100% - 50px);
+    height: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color:white;
+}
+
+#ad {
+    position: absolute;
+    right:17px;
+    top:  40%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1DABB8;
+    border-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+div:hover{
+    background-color:whitesmoke;
+}
+   button:hover {
+            background-color: #26c42e;
+        }
+
+#particles-js {
+    /* Estilos para a camada das partículas */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none; /* Garante que as interações do mouse passem através das partículas */
+}

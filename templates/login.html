@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERENCIADOR DE TAREFAS</title>
+    <!-- Link para o arquivo CSS -->
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/estilos.css') }}">
+    <script src="/static/JS/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+
+
+    
+
+
+</head>
+
+<body>
+    <h1>GERENCIADOR DE TAREFAS</h1>
+    <div id="particles-js"></div>
+    <div class="container">
+        <form id="login-form">
+            <h2>TELA DE LOGIN</h2>
+                  
+            <p><b>USUÁRIO</b></p> 
+            <div class="input-container">
+                <input type="text" id="usuario" placeholder="Usuário ou E-mail">
+                <button class="add" id="ad">✉️</button>
+            </div>
+            <p><b>SENHA</b></p>
+            <div class="senha-container">
+                <input type="password" id="senha"placeholder="Digite sua senha">
+                <button class="add" id="ad1">&#128274;</button>
+            </div>
+            <button type="button" id="botao-login"><b>Entrar</b></button>
+
+
+            <p class="response" id="mensagem"></p>
+        </form>
+        <div class="response" id="mensagem"></div>
+    </div>
+
+
+</body>
+
+</html>

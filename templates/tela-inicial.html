@@ -4,33 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=7, initial-scale=1.0">
-    <title>GERENCIADOR</title>
+    <title>GERENCIADOR DE TAREFAS </title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='imagem/tasks_113292 (1).png') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/pag.css') }}">
     <script src="/static/JS/login.js"></script>
     <script src="/static/JS/tela-inicial.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <head>
+        <!-- Outras tags do cabeçalho aqui -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Outras tags do cabeçalho aqui -->
+    </head>
+    
 
 
 </head>
 <body>
         <header>
-        <h1> ADICIONAR TAREFAS</h1>
+        <label for="tafe">
+            <h1> ADICIONAR TAREFAS</h1>
+        </label>
       
-      <div class="entrada">
-         <input type="text" id="tafe"placeholder=" adiciona tarefa ">
-         <button class="add">+</button>     
-         
-     </div>
+        <div class="entrada">
+            <input type="text" id="tafe" placeholder="digite uma tarefa..">
+            <button class="add">
+                <div class="circulo"><b>+</b></div> <!-- Círculo aqui -->
+                   <b>Adicionar Tarefa</b>
+            </button>
+        </div>
+        
       </header>
-      <div class="app">
-         <h3>Minhas Tarefas</h3>
-         <ul class="tarefas">
-             <li>
-             </li>
-             <!-- Outros itens da lista aqui -->
-         </ul>
-         <button id="sair"><b>encerrar seçao</b> </button>
-     </div>
+      <main>
+          <div class="app">
+            <h3>Minhas Tarefas</h3>
+            <ul class="tarefas">
+                <!-- Adicione mais tarefas conforme necessário -->
+                {% for tarefa in tarefas %}
+                    <li>
+                        <span id="tarefa-{{ tarefa['idtarefa'] }}">{{ tarefa['descricao'] }}</span>
+                        <button class="botao-editar" data-idtarefa="{{ tarefa['idtarefa'] }}" data-nome="{{ tarefa['descricao'] }}">Editar</button>
+                    </li>
+                {% endfor %}
+            </ul>
+            <button type="button" id="sair"><b>Encerrar Sessão</b></button>
+              </div>
+      </main>
+   
+        
+
+
+        
+        
+        
+        </div>
+
+    </div>
+    
+    </div>
 </div> 
 </body>
 </html>

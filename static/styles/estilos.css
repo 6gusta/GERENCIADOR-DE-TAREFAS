@@ -1,8 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 
 #particles-js {
     height: 100vh;
@@ -24,19 +19,26 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 400px; /* Mantenha a largura máxima desejada */
+    width: 80%;
     margin: 0 auto;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px #1DABB8;
     z-index: 1;
+    max-height: 100%;
+    height: 50%;
+    
 }
 
 .senha-container{
     display: flex;
     align-items: center;
     
+}
+input[type="password"] {
+    background-image: none !important;
 }
 
 #senha {
@@ -100,6 +102,7 @@ h1 {
     font-weight: bold;
 }
 
+
 input[type="text"],
 input[type="password"] {
     width: calc(328px);
@@ -117,7 +120,17 @@ input[type="password"] {
     margin-bottom: 20px;
 }
 
-#usuario {
+#nomes {
+    width: calc(100% - 50px);
+    height: 40px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color:white;
+}
+#modal.ppp{
     width: calc(100% - 50px);
     height: 40px;
     padding: 10px;
@@ -145,6 +158,9 @@ input[type="password"] {
     justify-content: center;
     align-items: center;
     
+}
+h5{
+    font-size: 30px;
 }
 
 
@@ -177,3 +193,131 @@ div:hover{
     z-index: -1;
     pointer-events: none; /* Garante que as interações do mouse passem através das partículas */
 }
+#email-modal{
+    width: 350px;
+    height: 35px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 440px;
+    height:480px;
+    overflow: auto;
+    background-color:white;
+    margin-left: 540px;
+    margin-top: 80px;
+  
+    
+}
+.task-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.task-link:hover {
+    text-decoration: none;
+}
+
+
+
+.modal-conteudo {
+    background-color:white;
+    color: black;
+    margin: 10% auto;
+    padding: 20px;
+    
+    width: 90%;
+    height: 450px;
+    margin-top: 0px;
+    
+}
+@media screen and (max-width: 768px) {
+    .modal {
+        /* Estilos específicos para telas menores que 768px de largura */
+        padding: 10px;
+        
+        flex-direction: column;
+        align-items: center; /* Reduz o preenchimento em telas menores */
+    }
+
+}
+
+
+#telefone{
+    width: 350px;
+    height: 30px;
+}
+a {
+    text-decoration: none;
+}
+/* Estilo para o contêiner do campo de e-mail */
+div {
+    margin-bottom: 20px; /* Espaçamento entre os elementos */
+}
+
+/* Estilo para o rótulo do campo de e-mail */
+label {
+    font-weight: bold; /* Texto em negrito */
+    display: block; /* Faz o rótulo ocupar uma linha inteira */
+    margin-bottom: 5px; /* Espaçamento entre o rótulo e o campo de entrada */
+}
+
+/* Estilo para o campo de entrada de e-mail */
+input[type="email"] {
+    width: 90%; /* Ocupa 100% da largura do contêiner */
+    padding: 10px; /* Espaçamento interno do campo de entrada */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda com cor cinza claro */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+/* Estilo para o campo de entrada de e-mail quando está em foco (selecionado) */
+input[type="email"]:focus {
+    border-color: #007bff; /* Borda azul quando o campo está em foco */
+    outline: none; /* Remove a borda ao redor do campo quando está em foco */
+}
+
+#senhas{
+    height: 20px;
+    border-radius: 0%;
+
+}
+
+
+
+.fechar {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+.botao{
+    background-color: #4caf50;
+    margin-top: 5px;
+}
+.botao:hover {
+    background-color: #26c42e;
+}
+#abrirModal{
+    text-decoration: none;
+    /* Outros estilos para o link, se necessário */
+}
+@media screen and (max-width: 768px) {
+    /* Adicione estilos específicos para telas menores que 768px de largura */
+    .container {
+        margin-top: 20px;
+    }
+    /* Adicione mais regras de mídia conforme necessário */
+}
+

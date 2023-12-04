@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <link rel=" icon"type="image/png" href="{{ url_for('static', filename='imagem/tasks_113292 (1).png') }}">
+
+</head>
 
 <head>
     <meta charset="UTF-8">
@@ -10,41 +14,89 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/estilos.css') }}">
     <script src="/static/JS/login.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-
+     
 
 </head>
+<h1>GERENCIADOR DE TAREFAS</h1>
+<div id="particles-js"></div>
+<div class="container">
+    <form id="login-form">
+        <h2>TELA DE LOGIN</h2>
+        <label for="nomes">
+            <p><b>USUÁRIO</b></p>
+       
+        </label>
 
-<body>
-    <h1>GERENCIADOR DE TAREFAS</h1>
-    <div id="particles-js"></div>
-    <div class="container">
-        <form id="login-form">
-            <h2>TELA DE LOGIN</h2>
-                  
-            <p><b>USUÁRIO</b></p> 
-            <div class="input-container">
-                <input type="text" id="usuario" placeholder="Usuário ou E-mail">
-                <button class="add" id="ad">✉️</button>
-            </div>
+        <div class="input-container">
+          
+            
+            <input type="text" id="nomes" placeholder="✉️ Usuário ou E-mail" autocomplete="username" required  minlength="8" size="20" >
+          
+        </div>
+        <label for="senha">
             <p><b>SENHA</b></p>
-            <div class="senha-container">
-                <input type="password" id="senha"placeholder="Digite sua senha">
-                <button class="add" id="ad1">&#128274;</button>
-            </div>
-            <button type="button" id="botao-login"><b>Entrar</b></button>
+        </label>
+        <div class="senha-container">
+            <input type="password" id="senha" placeholder="&#128274; Digite sua senha" autocomplete="current-password" required  minlength="8" size="20" >
+
+            
+            
+        </div>
+        <div><a href="#" id="abrirModalCadastro"><b>Cadastre-se</b></a></div>
+        <button type="button" id="botao-login"><b>Entrar</b></button>
+        <p class="response" id="mensagem"></p>
+    </form>
 
 
-            <p class="response" id="mensagem"></p>
-        </form>
-        <div class="response" id="mensagem"></div>
+    <div id="modalCadastro" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <form id="cadastroForm">
+                <h5><b>Cadastre-se</b></h5>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required  required minlength="8" size="5" autocomplete="username">
+                </div>
+                <!-- Campo de entrada para o número de telefone -->
+                <div>
+                    <label for="numero_telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="celular" placeholder="Número de Telefone" required  required minlength="8" size="20" autocomplete="tel">
+                </div>
+                <!-- Campo de entrada para o endereço de e-mail -->
+                <div>
+                    <div>
+                        
+                        <label for="email">E-mail:</label>
+                              <input type="email" id="emails" name="email" placeholder="Digite seu e-mail" required minlength="10" size="20" required autocomplete="email" >
+                    </div>
+              
+                </div>
+                <!-- Campo de entrada para a senha -->
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password"  name="ppp" placeholder="Digite sua senha" required autocomplete="current-password" required minlength="8" size="20" autocomplete="new-password">
+                </div>
+                <!-- Campo de confirmação de senha -->
+                <div>
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Confirme sua senha" required minlength="8" size="20" autocomplete="new-password">
+                </div>
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Cadastrar</button>
+            </form>
+            
+            <div id="mensagemDivCadastro"></div> <!-- Div para exibir mensagens de cadastro -->
+        </div>
     </div>
 
 
-</body>
+    <!-- Link para abrir o modal de cadastro -->
+  
+
+    <!-- Modal de Cadastro -->
+    
 
 </html>

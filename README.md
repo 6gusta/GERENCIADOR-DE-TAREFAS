@@ -9,7 +9,7 @@ Este projeto é um sistema web para gerenciamento de tarefas, desenvolvido com F
 - **HTML, CSS e JavaScript**: Interface do usuário
 
 ## Funcionalidades
-
+ 
 - Cadastro e login de usuários
 - Criação, edição e exclusão de tarefas
 - Interface amigável para gerenciar tarefas

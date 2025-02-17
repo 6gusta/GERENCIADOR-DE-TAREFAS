@@ -21,4 +21,4 @@ Esse projeto é um **Gerenciador de Tarefas** simples e eficiente, desenvolvido 
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/gerenciador-de-tarefas.git
+git clone https://github.com/6gusta/gerenciador-de-tarefas.git

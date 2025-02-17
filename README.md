@@ -1,19 +1,33 @@
-# Gerenciamento de Tarefas com Flask e MySQL
+Gerenciador de Tarefas - Python, Flask e SQLAlchemy
+Esse projeto é um Gerenciador de Tarefas simples e eficiente, desenvolvido com Python, Flask e SQLAlchemy para interação com um banco de dados MySQL.
 
-Este projeto é um sistema web para gerenciamento de tarefas, desenvolvido com Flask e MySQL. Ele inclui funcionalidades de cadastro e login de usuários, além de permitir a criação, edição e exclusão de tarefas.
+Funcionalidades
+Autenticação de usuários com login seguro.
+Gestão de tarefas: Adicione, edite, e exclua tarefas.
+Verificação de tarefas pendentes: Fique de olho nas tarefas que precisam ser concluídas.
+Interface intuitiva e fácil de usar.
+Tecnologias
+Python
+Flask
+SQLAlchemy
+MySQL
+Como Rodar
+Clone o repositório:
+bash
+Copy
+Edit
+git clone https://github.com/seu-usuario/gerenciador-de-tarefas.git
+Instale as dependências:
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Configure o banco de dados e crie as tabelas.
 
-## Tecnologias Utilizadas
+Execute o servidor:
 
-- **Flask**: Framework web para Python
-- **MySQL**: Banco de dados relacional
-- **HTML, CSS e JavaScript**: Interface do usuário
-
-## Funcionalidades
- 
-- Cadastro e login de usuários
-- Criação, edição e exclusão de tarefas
-- Interface amigável para gerenciar tarefas
-
-
-
-
+bash
+Copy
+Edit
+python app.py
+Acesse a aplicação em: http://localhost:5000
